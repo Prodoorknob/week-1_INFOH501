@@ -1,7 +1,7 @@
 
 
 # add code below ...
-def is_palindrome(text: str) -> bool:
+def palindrome(text: str) -> bool:
     """
     Return True if `text` is a palindrome for case-insensitive and alphanumeric strings.
     Examples: "racecar", "A man, a plan, a canal: Panama!"
@@ -9,7 +9,7 @@ def is_palindrome(text: str) -> bool:
     filtered = [char.lower() for char in text if char.isalnum()] #isalnum() checkes whether character is alphanumeric value
     return filtered == filtered[::-1]
 
-def is_balanced_parentheses(in_value: str) -> bool:
+def parentheses(in_value: str) -> bool:
     """
     Return True if parentheses/brackets/braces in `in_value` are balanced.
     Checks (), [], {} and ignores all other characters.
